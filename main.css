@@ -110,3 +110,29 @@ header .header-cases {
      background-position: center;
      background-size: cover;
 }
+
+.verticle-center {
+     display: table-cell;
+     vertical-align: middle;
+}
+
+.index-banner h2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 70px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+}
+
+.index-banner h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: 28px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 8px #111;
+}
