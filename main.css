@@ -136,3 +136,10 @@ header .header-cases {
     text-align: center;
     text-shadow: 2px 2px 8px #111;
 }
+
+.index-links div {
+    margin: 16px 16px 0;
+    width: calc(100%-32px);
+    height: 100px;
+    background-color: #f2f2f2;
+}
