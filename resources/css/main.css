@@ -3,54 +3,144 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 
 /* My Code */
 
 * {
-    text-decoration:none;
+    text-decoration: none;
 }
 
 body {
@@ -76,44 +166,43 @@ header .header-brand {
 }
 
 header nav ul {
-     display: center;
-     margin: 0 auto;
-     width: fit-content;
+    display: center;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 header nav ul li {
-     display: inline-block;
-     float: left;
-     list-style: none;
-     padding: 0 16px;
+    float: left;
+    list-style: none;
+    padding: 0 16px;
 }
 
 header nav ul li a {
     font-family: 'Crimson Text', serif;
     font-size: 16px;
     font-weight: 900;
-    color: #111;	
+    color: #111;
 }
 
 header .header-cases {
-     display: none;	
+    display: none;
 }
 
 
 /* INDEX.HTML */
 
 .index-banner {
-     width: 100%;
-     height: calc(100vh - 100px);
-     background-image: url("Rachel&Caleb-1109.jpg");
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: cover;
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url("images/Portrait.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .verticle-center {
-     display: table-cell;
-     vertical-align: middle;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .index-banner h2 {
@@ -144,7 +233,6 @@ header .header-cases {
     background-color: #D3D3D3;
 }
 
-
 .index-links div h3 {
     font-family: 'Crimson Text', serif;
     font-size: 28px;
@@ -155,5 +243,5 @@ header .header-cases {
     text-transform: uppercase;
 }
 
-/* FOOTER */
 
+/* FOOTER */
