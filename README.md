@@ -1,1 +1,1 @@
-# This is my personal website where I'll compile example work and showcase webdevelopment ability
+# Site under development. Created as an experiment to work with GitHub Pages.
