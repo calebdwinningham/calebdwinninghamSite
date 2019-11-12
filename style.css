@@ -282,6 +282,30 @@ nav #menu li a:hover {
     }
 }
 
+.contactus {
+    position: relative;
+    left: 50%;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    background: transparent;
+    color: #dfdfdf;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.specialheader {
+    letter-spacing: 2px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.contactus:hover {
+    background: #dfdfdf;
+    color: #101010;
+}
+
 /*--Projects Styling--*/
 h6 {
     text-align: center;
