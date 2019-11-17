@@ -42,7 +42,7 @@ html, body {
         width: 0;
     }
     to {
-        width: 18em;
+        width: 20em;
     }
 }
 
@@ -52,7 +52,7 @@ html, body {
             width: 0;
         }
         to {
-            width: 17em;
+            width: 20em;
         }
     }
 }
@@ -285,8 +285,9 @@ nav #menu li a:hover {
 .contactus {
     position: relative;
     left: 50%;
+    transform: translate(-50%, 0);
     display: block;
-    text-align: center;
+    margin: auto 0;
     text-transform: uppercase;
     padding: 20px 30px;
     background: transparent;
@@ -297,7 +298,7 @@ nav #menu li a:hover {
 
 .specialheader {
     letter-spacing: 2px;
-    font-size: 14px;
+    font-size: 18px;
     text-transform: uppercase;
 }
 
@@ -312,95 +313,100 @@ h6 {
 }
 
 .vertical {
-    margin-top: 40px;
+    margin-top: 10px;
     border-left: 1px solid #fff;
-    height: 80px;
+    height: 40px;
     position: absolute;
     left: 50%;
 }
 
 .project {
-    height: 500px;
+    height: 300px;
+    margin: 5px;
 }
 
 .project1 {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    background: url(https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/72490498_10220762526281665_8482137149162913792_n.jpg?_nc_cat=104&_nc_oc=AQnYqjOJL0uM5yQu0q4r4Qb8qYp1VGKA35uIYWgAQnWIfa4XPcWxLdE2r8WTqI4tiW8&_nc_ht=scontent-iad3-1.xx&oh=91e385e23cb16acd947a31732e80d376&oe=5E56D788) no-repeat 50% 50%;
+    background: url(https://github.com/calebdwinningham/Edge-Case./blob/gh-pages/Cityscape1.png?raw=true) no-repeat 50% 50%;
     background-size: cover;
 }
 
 .project1::after {
-    content: "timeless flow.";
+    content: "collaborative needfinding.";
+    text-align: center;
     font-family: "Roboto Mono";
-    font-size: 36px;
-    position: relative;
+    font-size: 24px;
+    position: absolute;
     color: #fff;
     display: block;
-    top: 8%;
-    left: -60%;
-    right: 0;
-    bottom: 0;
+    background-color:black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .project2 {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    background: url(https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/72490498_10220762526281665_8482137149162913792_n.jpg?_nc_cat=104&_nc_oc=AQnYqjOJL0uM5yQu0q4r4Qb8qYp1VGKA35uIYWgAQnWIfa4XPcWxLdE2r8WTqI4tiW8&_nc_ht=scontent-iad3-1.xx&oh=91e385e23cb16acd947a31732e80d376&oe=5E56D788) no-repeat 50% 50%;
+    background: url(https://github.com/calebdwinningham/Edge-Case./blob/gh-pages/Cityscape2.png?raw=true) no-repeat 50% 50%;
     background-size: cover;
 }
 
 .project2::after {
-    content: "foretime.";
+    content: "project preflights.";
+    text-align: center;
     font-family: "Roboto Mono";
-    font-size: 36px;
-    position: relative;
+    font-size: 24px;
+    position: absolute;
     color: #fff;
     display: block;
-    top: 80%;
-    left: 90%;
-    right: 0;
-    bottom: 0;
+    background-color:black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .project3 {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    background: url(https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/72490498_10220762526281665_8482137149162913792_n.jpg?_nc_cat=104&_nc_oc=AQnYqjOJL0uM5yQu0q4r4Qb8qYp1VGKA35uIYWgAQnWIfa4XPcWxLdE2r8WTqI4tiW8&_nc_ht=scontent-iad3-1.xx&oh=91e385e23cb16acd947a31732e80d376&oe=5E56D788) no-repeat 50% 50%;
+    background: url(https://github.com/calebdwinningham/Edge-Case./blob/gh-pages/Cityscape3.png?raw=true) no-repeat 50% 50%;
     background-size: cover;
 }
 
 .project3::after {
-    content: "never again.";
+    content: "software solutions.";
+    text-align: center;
     font-family: "Roboto Mono";
-    font-size: 36px;
-    position: relative;
+    font-size: 24px;
+    position: absolute;
     color: #fff;
     display: block;
-    top: 80%;
-    left: -5%;
-    right: 0;
-    bottom: 0;
+    background-color:black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .project4 {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    background: url(https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/72490498_10220762526281665_8482137149162913792_n.jpg?_nc_cat=104&_nc_oc=AQnYqjOJL0uM5yQu0q4r4Qb8qYp1VGKA35uIYWgAQnWIfa4XPcWxLdE2r8WTqI4tiW8&_nc_ht=scontent-iad3-1.xx&oh=91e385e23cb16acd947a31732e80d376&oe=5E56D788) no-repeat 50% 50%;
+    background: url(https://github.com/calebdwinningham/Edge-Case./blob/gh-pages/Cityscape4.png?raw=true) no-repeat 50% 50%;
     background-size: cover;
 }
 
 .project4::after {
-    content: "Nice work.";
+    content: "after action support.";
+    text-align: center;
     font-family: "Roboto Mono";
-    font-size: 36px;
-    position: relative;
+    font-size: 24px;
+    position: absolute;
     color: #fff;
     display: block;
-    top: 10%;
-    left: 90%;
-    right: 0;
-    bottom: 0;
+    background-color:black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media(max-width: 768px){
@@ -410,10 +416,6 @@ h6 {
     }
 
     .vertical {
-        display: none;
-    }
-
-    .project1::after, .project2::after, .project3::after, .project4::after {
         display: none;
     }
 }
@@ -431,6 +433,10 @@ h6 {
 .hr {
     background: rgba(255, 255, 255, 0.2);
     height: 1px;
+}
+
+.info {
+    margin-top: 5px;
 }
 
 .info h4 {
@@ -485,8 +491,12 @@ h6 {
     background: #c4302b;
 }
 
-#media, #address {
+#media {
     text-align: right;
+}
+
+#address {
+    text-align: center;
 }
 
 #media ul {
