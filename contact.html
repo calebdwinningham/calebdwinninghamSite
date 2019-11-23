@@ -29,6 +29,33 @@
     <link rel="stylesheet" href="animate.css">
     <script src="wow.min.js"></script>
 
+    <!--Contact Actions-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_MLQGWc6Hi8H4YkdIXBRbX");
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                var params = {
+                    name: document.getElementById('contact-name').value,
+                    email: document.getElementById('contact-email').value,
+                    message: document.getElementById('contact-project').value
+                };
+                emailjs.send('default_service', 'template_ukCdeWci', params)
+                    .then(function (response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                        document.getElementById("contactsection").style.display = "none";
+                        document.getElementById("confirmation").style.display = "block";
+                    }, function (err) {
+                        console.log('FAILED...', err);
+                    });
+            });
+        }
+    </script>
 </head>
 
 <body>
@@ -65,93 +92,104 @@
         <!--End Navbar-->
         <div class="whitespace"></div>
         <!--Hero Section-->
-        <div class="container">
-            <div class="hero-content">
-                <br><br>
-
-                <div class="row">
-                    <div class="col-lg-8">
-
-                        <h3 class="wow fadeInUp" data-wow-delay="1s">contact us.</h3>
-                        <p class="wow fadeInUp" data-wow-delay="1.2s">Filler infooo</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--End Hero-->
-        <!--Form Section-->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="action">
-                        <form name="contact-form" id="contact-form" method="post" action="">
-                            <ul>
-                                <li class="wow fadeInUp" data-wow-delay="1.4s">
-                                    <label for="contact-name">Name : </label>
-                                    <div class="textarea">
-                                        <input type="text" name="contact-name" id="contact-name" value="" required>
-                                    </div>
-                                </li>
-                                <li class="wow fadeInUp" data-wow-delay="1.6s">
-                                    <label for="contact-email">Email : </label>
-                                    <div class="textarea">
-                                        <input type="email" name="contact-email" id="contact-email" value="" required>
-                                    </div>
-                                </li>
-                                <li class="wow fadeInUp" data-wow-delay="1.8s">
-                                    <label for="contact-project">Message : </label>
-                                    <div class="textarea">
-                                        <textarea type="text" name="contact-project" id="contact-project" rows="6"
-                                            value="" required></textarea>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <button type="submit" name="contact-submit" id="contact-submit" class="send wow fadeInUp"
-                                data-wow-delay="2s">Send Message</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--End Form-->
-        <div class="whitespace"></div>
-        <!--Footer Section-->
-        <div class="footer">
+        <div id="contactsection">
             <div class="container">
-                <div class="hr">
-                    <div class="row"></div>
-                </div>
-                <div class="info">
+                <div class="hero-content">
+                    <br><br>
                     <div class="row">
-                        <div class="col-lg-6" id="personal">
-                            <h4 class="wow fadeInUp" data-wow-delay="0.2s">
-                                edge case consulting and software solutions, llc</h4>
-                            <br><br>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-10 marginize" id="outlinethis">
+                            <h3 class="wow fadeInUp" data-wow-delay="1.0s">contact us.</h3>
+                            <p class="desc wow fadeInUp" data-wow-delay="0.8s">We're excited to hear from you. Send us a note and we'll reach out as soon as possible to see if we're a good fit for each other.</p>
                         </div>
                         <div class="col-lg-1"></div>
-                        <div class="col-lg-3" id="address">
-                            <h4 class="wow fadeInUp" data-wow-delay="0.2s">
-                                info@edgecase.consulting</h4>
-                            <br><br>
-                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Hero-->
+            <!--Form Section-->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                        <div class="action">
+                            <form name="contact-form" id="contact-form">
+                                <input type="hidden" name="contact_number">
+                                <ul>
+                                    <li class="wow fadeInUp" data-wow-delay="0.6s">
+                                        <label for="user-name">Name : </label>
+                                        <div class="textarea">
+                                            <input type="text" name="user_name" id="contact-name" value="" required>
+                                        </div>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-delay="0.4s">
+                                        <label for="user-email">Email : </label>
+                                        <div class="textarea">
+                                            <input type="email" name="user_email" id="contact-email" value="" required>
+                                        </div>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-delay="0.2s">
+                                        <label for="message">Message : </label>
+                                        <div class="textarea">
+                                            <textarea type="text" name="message" id="contact-project" rows="6" value=""
+                                                required></textarea>
+                                        </div>
+                                    </li>
+                                </ul>
 
-                        <div class="col-lg-2" id="media">
-                            <ul>
-                                <li id="tw" class="wow fadeInUp"
-                                    onclick="window.open('https://www.twitter.com/edgecase_llc', '_blank');"
-                                    data-wow-delay="0.4s">twitter</li>
-                            </ul>
-
-                            <br><br>
+                                <button type="submit" value="Send" name="contact-submit" id="contact-submit"
+                                    class="send">Send Message</button>
+                            </form>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-2"></div>
+            </div>
+            <!--End Form-->
+            <div class="whitespace"></div>
+            <!--Footer Section-->
+            <div class="footer">
+                <div class="container">
+                    <div class="hr">
+                        <div class="row"></div>
+                    </div>
+                    <div class="info">
+                        <div class="row">
+                            <div class="col-lg-6" id="personal">
+                                <h4 class="wow fadeInUp" data-wow-delay="0.2s">
+                                    edge case consulting and software solutions, llc</h4>
+                                <br><br>
+                            </div>
+                            <div class="col-lg-1"></div>
+                            <div class="col-lg-3" id="address">
+                                <h4 class="wow fadeInUp" data-wow-delay="0.2s">
+                                    info@edgecase.consulting</h4>
+                                <br><br>
+                            </div>
 
+                            <div class="col-lg-2" id="media">
+                                <ul>
+                                    <li id="tw" class="wow fadeInUp"
+                                        onclick="window.open('https://www.twitter.com/edgecase_llc', '_blank');"
+                                        data-wow-delay="0.4s">twitter</li>
+                                </ul>
+
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
         <!--End Footer Section-->
-
+        <div id="confirmation" class="centerthis">
+            <h3>Message recieved. We'll be in touch shortly!</h3>
+            <br><br>
+            <div class="wow fadeInUp">
+                <button class="contactus" onclick="location.href='index.html'">Home</button>
+            </div>
+        </div>
         <br><br><br><br>
 
     </div>
@@ -160,7 +198,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript">
-
         //Navigation
         $("#toggle").click(function () {
             $(this).toggleClass('on');
