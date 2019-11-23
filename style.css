@@ -698,8 +698,8 @@ textarea:focus {
 
 /*--About Styling--*/
 .about {
-    height: 300px;
-    width: auto;
+    height: 800px;
+    width: 300px;
     margin-top: 120px;
 }
 
@@ -707,12 +707,36 @@ textarea:focus {
     z-index: 10;
 }
 
-.image {
+.imageme {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     margin-top: 100px;
     filter: grayscale(100%);
     margin: 5;
-    background: url(https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/73370642_10220762574682875_1416438883750510592_n.jpg?_nc_cat=103&_nc_oc=AQka6wbgGtuw7YuwvVitpJBfj3vkz4ba2F4QIoZHMfcEZHJZN_k4qEY6NNYCfiuBJeE&_nc_ht=scontent-atl3-1.xx&oh=65c623bb2327f7f5fd19ef935e5a2549&oe=5E6089C2) no-repeat 50% 70%;
+    background: url(https://raw.githubusercontent.com/calebdwinningham/Edge-Case./gh-pages/aboutme.jpeg) no-repeat 45% 30%;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.imageme:hover {    
+    -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(30%);
+    transition: all 0.5s ease-in-out;
+}
+
+.imageus {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    margin-top: 100px;
+    filter: grayscale(100%);
+    margin: 5;
+    background: url(https://raw.githubusercontent.com/calebdwinningham/Edge-Case./gh-pages/aboutus.jpg) no-repeat 50% 70%;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.imageus:hover {    
+    -webkit-filter: grayscale(30%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(30%);
+    transition: all 0.5s ease-in-out;
 }
 
 /*--Project Styling--*/
