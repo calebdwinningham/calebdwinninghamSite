@@ -22,7 +22,7 @@ html, body {
 
 /*--Typewriter Effect--*/
 .line{
-    width: 18em;
+    width: 16em;
     top: 50%;
     margin: auto;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
@@ -42,7 +42,7 @@ html, body {
         width: 0;
     }
     to {
-        width: 18em;
+        width: 16em;
     }
 }
 
@@ -52,7 +52,7 @@ html, body {
             width: 0;
         }
         to {
-            width: 18em;
+            width: 16em;
         }
     }
 }
@@ -255,6 +255,7 @@ nav #menu li a:hover {
     top: 50%;
     left: 50%;
     margin-right: -50%;
+    text-align: center;
     transform: translate(-50%, -50%) !important;
 }
 
