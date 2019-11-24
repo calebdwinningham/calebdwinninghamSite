@@ -135,6 +135,7 @@ nav #menu li a:hover {
     visibility: hidden;
     opacity: 0;
 }
+
 .close-btn {
     position: absolute;
     right: 16px;
@@ -581,6 +582,7 @@ h6 {
         position: relative;
         text-align: center;
         top: -150px;
+    }
 }
 
 /*--Work Styling--*/
