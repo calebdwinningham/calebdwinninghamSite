@@ -702,6 +702,10 @@ textarea:focus {
     #service1, #service2, #service3, #service4{
         display: none;
     }
+
+    .marginize {
+        padding: 10;
+    }
 }
 
 /*--About Styling--*/
