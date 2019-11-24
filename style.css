@@ -255,6 +255,7 @@ nav #menu li a:hover {
     position: relative;
     text-align: center;
     top: -150px;
+    width: 98%;
 }
 
 /*--Scroll Down Icon Animation--*/
